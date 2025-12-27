@@ -19,7 +19,7 @@ Aurora combine plusieurs indicateurs techniques pour générer des signaux d'ach
 ### 🎯 Stratégie de trading
 - Signaux basés sur l'alignement HA/ZLSMA avec protection Chandelier Exit
 - Système de clôture sur signal inverse configurable
-- Support des positions longues, courtes ou les deux
+- Support des positions d'achats, ventes ou les deux
 - Inversion des signaux possible
 
 ### 📈 Gestion du risque
@@ -190,15 +190,6 @@ MQL5_GEMINI/
 - **FTMO** : Respectez strictement les règles des challenges
 - **News** : Les filtres ne garantissent pas contre tous les événements
 - **Weekend** : La gestion weekend réduit mais n'élimine pas les risques de gap
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! Pour contribuer :
-
-1. Fork le projet
-2. Créez une branche pour votre fonctionnalité
-3. Testez thoroughly vos modifications
-4. Soumettez une Pull Request
 
 ## 📄 Licence
 
