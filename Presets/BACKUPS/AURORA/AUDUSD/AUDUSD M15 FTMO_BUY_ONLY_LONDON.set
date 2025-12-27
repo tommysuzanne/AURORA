@@ -1,0 +1,76 @@
+; Aurora — AUDUSD M15 — FTMO Buy-only London
+; Objectif: côté ACHAT uniquement, fenêtre Londres
+
+; Indicateurs & Grid
+CeAtrPeriod=1
+CeAtrMult=0.75
+ZlPeriod=50
+Grid=false
+GridVolMult=1.5
+GridTrailingStopLevel=0
+GridMaxLvl=5
+
+; Ouverture & Système
+SLDev=650
+CloseOrders=true
+Reverse=false
+InpOpen_Side=0
+OpenNewPos=true
+MultipleOpenPos=false
+MarginLimit=300
+SpreadLimit=25
+Slippage=10
+TimerInterval=10
+MagicNumber=2105
+Filling=1
+
+; Risk Management
+Risk=0.60
+RiskMode=0
+IgnoreSL=false
+Trail=true
+TrailingStopLevel=50
+EquityDrawdownLimit=5.5
+
+; Session Management (Londres)
+InpSess_TradeMon=true
+InpSess_TradeTue=true
+InpSess_TradeWed=true
+InpSess_TradeThu=true
+InpSess_TradeFri=true
+InpSess_TradeSat=false
+InpSess_TradeSun=false
+InpSess_EnableTime=true
+InpSess_StartHour=8
+InpSess_StartMin=0
+InpSess_EndHour=20
+InpSess_EndMin=0
+InpSess_CloseOutside=true
+InpSess_CloseRestricted=true
+InpSess_RespectBrokerSessions=true
+InpSess_TimerSec=10
+
+; WeekendGuard
+InpFTMO_WeekendClose=true
+InpFTMO_WeekendBufferMin=60
+
+; News Management
+InpNews_Enable=true
+InpNews_Levels=2
+InpNews_Ccy=
+InpNews_BlackoutB=30
+InpNews_BlackoutA=15
+InpNews_MinCoreHighMin=2
+InpNews_Action=2
+InpNews_RefreshMin=10
+
+; Logs
+InpLog_General=true
+InpLog_Position=false
+InpLog_Risk=false
+InpLog_Session=true
+InpLog_News=true
+InpLog_Strategy=false
+InpLog_Orders=false
+InpLog_Diagnostic=false
+

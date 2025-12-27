@@ -1,0 +1,71 @@
+; Aurora preset — XAUUSD H1 — ULTRA_AGG_GRID_OVERDRIVE
+; Objectif: agressif H1 avec grille puissante (max positions via grille)
+
+; Indicateurs
+CeAtrPeriod=18
+CeAtrMult=2.0
+ZlPeriod=34
+
+; Gestion générale
+SLDev=80
+CloseOrders=true
+Reverse=false
+
+; Risque
+Risk=15.0
+RiskMode=0
+IgnoreSL=true
+Trail=true
+TrailingStopLevel=25
+EquityDrawdownLimit=0
+
+; Grille
+Grid=true
+GridVolMult=1.80
+GridTrailingStopLevel=20
+GridMaxLvl=100
+
+; Contraintes d’ouverture
+OpenNewPos=true
+MultipleOpenPos=false
+MarginLimit=0
+SpreadLimit=-1
+
+; Sessions
+InpSess_TradeMon=true
+InpSess_TradeTue=true
+InpSess_TradeWed=true
+InpSess_TradeThu=true
+InpSess_TradeFri=true
+InpSess_TradeSat=false
+InpSess_TradeSun=false
+InpSess_EnableTime=false
+InpSess_StartHour=0
+InpSess_StartMin=0
+InpSess_EndHour=23
+InpSess_EndMin=59
+InpSess_CloseOutside=false
+InpSess_CloseRestricted=false
+InpSess_RespectBrokerSessions=false
+InpSess_TimerSec=10
+
+; WeekendGuard
+InpFTMO_WeekendClose=false
+InpFTMO_WeekendBufferMin=30
+
+; News
+InpNews_Enable=false
+InpNews_Levels=2
+InpNews_Ccy=
+InpNews_BlackoutB=30
+InpNews_BlackoutA=15
+InpNews_MinCoreHighMin=2
+InpNews_Action=2
+InpNews_RefreshMin=15
+
+; Auxiliaire
+Slippage=200
+TimerInterval=5
+MagicNumber=61001
+Filling=0
+
