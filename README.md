@@ -19,7 +19,7 @@ Aurora combine plusieurs indicateurs techniques pour générer des signaux d'ach
 ### 🎯 Stratégie de trading
 - Signaux basés sur l'alignement HA/ZLSMA avec protection Chandelier Exit
 - Système de clôture sur signal inverse configurable
-- Support des positions d'achats, ventes ou les deux
+- Support des positions LONG, SHORT ou les deux
 - Inversion des signaux possible
 
 ### 📈 Gestion du risque
@@ -120,11 +120,17 @@ InpFTMO_TotalMaxPercent = 9.0     // Max Loss total (%)
 
 ### Presets recommandés
 
-Des configurations optimisées sont disponibles pour :
+**⚠️ IMPORTANT** : Utilisez uniquement les presets situés à la racine du dossier `Presets/`. Les presets dans le dossier `BACKUPS/` ne sont pas fiables et peuvent contenir des configurations obsolètes.
 
-- **AUDUSD M15** : Scalping asiatique, London intraday
-- **US30 M15** : Configurations safe et kamikaze
-- **XAUUSD** : Swing D1/H1, Scalp M1/M5/M15
+**Presets recommandés par défaut pour US30 M15 :**
+- `US30 M15 SAFE 2% V3.set` - Configuration sécurisée avec 2% de risque par trade
+- `US30 M15 SAFE 5% V3.set` - Configuration équilibrée avec 5% de risque par trade
+
+Ces presets sont optimisés pour :
+- **US30 sur timeframe M15**
+- **Conditions de marché actuelles**
+- **Compatibilité FTMO complète**
+- **Gestion du risque optimisée**
 
 ## 📈 Utilisation
 
@@ -190,6 +196,37 @@ MQL5_GEMINI/
 - **FTMO** : Respectez strictement les règles des challenges
 - **News** : Les filtres ne garantissent pas contre tous les événements
 - **Weekend** : La gestion weekend réduit mais n'élimine pas les risques de gap
+
+## 🏦 Broker recommandé
+
+Pour optimiser les performances d'Aurora, il est **fortement recommandé** d'utiliser un broker ECN avec un compte RAW et un levier de 1:500.
+
+### Pourquoi ces spécifications ?
+
+#### **Broker ECN (Electronic Communication Network)**
+- **Exécution directe** : Les ordres sont routés directement vers les marchés interbancaires
+- **Pas de réquotes** : Élimination des réquotes qui peuvent perturber les stratégies automatisées
+- **Spreads compétitifs** : Spreads plus serrés, essentiels pour les stratégies de scalping et de grille
+- **Transparence** : Prix réels du marché sans markup du broker
+
+#### **Compte RAW (prix bruts)**
+- **Spreads à partir de 0.0 pips** : Contrairement aux comptes standard avec spreads minimums
+- **Commissions transparentes** : Frais clairement définis plutôt que cachés dans les spreads
+- **Conditions optimales** : Essentielles pour les stratégies à haute fréquence et petits mouvements
+
+#### **Levier 1:500**
+- **Flexibilité de positionnement** : Permet de gérer efficacement de petits risques par trade
+- **Optimisation du capital** : Meilleur contrôle de la taille des positions selon la gestion du risque
+- **Compatibilité FTMO** : Respecte les ratios de levier des challenges de trading
+
+### **Exemple recommandé : IC Markets**
+- Broker ECN réglementé (ASIC, CySEC)
+- Comptes RAW avec spreads à partir de 0.0 pips
+- Levier jusqu'à 1:500
+- API MetaTrader 5 native
+- Commissions compétitives (0.6 pip par lot aller-retour)
+
+*⚠️ Aurora fonctionne avec tout broker MT5, mais les performances optimales nécessitent ces spécifications.*
 
 ## 📄 Licence
 
