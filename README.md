@@ -17,7 +17,7 @@ Aurora combine une analyse technique multi-indicateurs avec une gestion de posit
 
 ## ✨ Nouvelles Fonctionnalités v2.20
 
-### 🖥️ Dashboard Pro "Platinum"
+### 🖥️ Dashboard Pro
 - **Interface Graphique Complète** : Visualisation claire sur le graphique.
 - **Monitoring Temps Réel** : Profit Total, Profit Actuel, Drawdown (Actuel, Journalier, Historique), Levier, Spread.
 - **Persistance des Données** : Le "Profit Total" et le "Max DD (Hist)" sont sauvegardés et restaurés automatiquement, même après un redémarrage du VPS ou de MT5.
@@ -129,4 +129,4 @@ Utilisez toujours un **Stop Loss** et ne risquez jamais plus que ce que vous pou
 ---
 
 **Développé par [Tommy Suzanne](https://github.com/tommysuzanne)**
-*Version 2.20 - Platinum Edition*
+*Version 2.20 - Gold Edition*
