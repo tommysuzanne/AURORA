@@ -16,7 +16,7 @@ Aurora est un **Expert Advisor MetaTrader 5 (MQL5)** événementiel et modulaire
 Liens rapides :
 - Documentation technique (index) : [`DOCS/index.md`](./DOCS/index.md)
 - Legacy monolith (complet, historique — peut diverger du code) : [`DOCS/legacy/Aurora_Documentation.md`](./DOCS/legacy/Aurora_Documentation.md)
-- Entrypoint : [`MQL5/Experts/Aurora.mq5`](Experts/Aurora.mq5)
+- Entrypoint : [`MQL5/Experts/Aurora.mq5`](./MQL5/Experts/Aurora.mq5)
 
 ---
 
@@ -33,16 +33,16 @@ Liens rapides :
 Aurora embarque des indicateurs via `#resource` (fichiers `.ex5`). Si les `.ex5` n’existent pas encore, compilez d’abord les indicateurs.
 
 1) Copiez le dossier `MQL5/` du repo dans le répertoire de données MT5 (`Fichier → Ouvrir le dossier de données`).
-2) Dans MetaEditor, compilez les indicateurs dans [`MQL5/Indicators/Aurora/`](Indicators/Aurora/) (création des `.ex5`).
-3) Compilez l’EA : [`MQL5/Experts/Aurora.mq5`](Experts/Aurora.mq5).
+2) Dans MetaEditor, compilez les indicateurs dans [`MQL5/Indicators/Aurora/`](./MQL5/Indicators/Aurora/) (création des `.ex5`).
+3) Compilez l’EA : [`MQL5/Experts/Aurora.mq5`](./MQL5/Experts/Aurora.mq5).
 4) Dans MT5, attachez `Aurora` à un graphique et activez **Algo Trading**.
 
 ## Configuration
 
-La documentation technique complète (inputs + dépendances + “contrat d’inputs”) est dans [`DOCS/index.md`](../DOCS/index.md) (voir `DOCS/inputs/index.md`).
+La documentation technique complète (inputs + dépendances + “contrat d’inputs”) est dans [`DOCS/index.md`](./DOCS/index.md) (voir `DOCS/inputs/index.md`).
 
 Notes :
-- Les presets `.set` (si présents) dans [`MQL5/Presets/`](Presets/) peuvent cibler des versions plus anciennes ; vérifiez les inputs par rapport à la version du code (`AURORA_VERSION` dans `MQL5/Experts/Aurora.mq5`) avant usage live.
+- Les presets `.set` (si présents) dans [`MQL5/Presets/`](./MQL5/Presets/) peuvent cibler des versions plus anciennes ; vérifiez les inputs par rapport à la version du code (`AURORA_VERSION` dans `MQL5/Experts/Aurora.mq5`) avant usage live.
 
 ## Backtest
 
