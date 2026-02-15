@@ -14,9 +14,8 @@ Aurora est un **Expert Advisor MetaTrader 5 (MQL5)** événementiel et modulaire
 - **Backtest plus réaliste** : couche optionnelle de simulation (latence / slippage / rejets / padding de spread)
 
 Liens rapides :
-- Documentation technique (index) : [`DOCS/index.md`](../DOCS/index.md)
-- Legacy monolith (stub) : [`DOCS/Aurora_Documentation.md`](../DOCS/Aurora_Documentation.md)
-- Legacy monolith (complet, historique — peut diverger du code) : [`DOCS/legacy/Aurora_Documentation.md`](../DOCS/legacy/Aurora_Documentation.md)
+- Documentation technique (index) : [`DOCS/index.md`](./DOCS/index.md)
+- Legacy monolith (complet, historique — peut diverger du code) : [`DOCS/legacy/Aurora_Documentation.md`](./DOCS/legacy/Aurora_Documentation.md)
 - Entrypoint : [`MQL5/Experts/Aurora.mq5`](Experts/Aurora.mq5)
 
 ---
